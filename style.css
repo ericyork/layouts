@@ -1,0 +1,98 @@
+/*--
+Defaults
+--*/
+html, body, body div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, a {
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 17px;
+}
+body {
+	font-family: 'Raleway';
+	font-weight: 300;
+}
+/*-- css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ --*/
+html {box-sizing: border-box;}
+*, *:before, *:after {box-sizing: inherit;}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Roboto Condensed';
+}
+/*--
+Document Styles
+--*/
+img {
+	width: 100%;
+}
+img:hover {
+	opacity: .75;
+}
+main {
+	width: 96%;
+	margin: 0 auto;
+}
+section {
+	margin-top: 30px;
+}
+.twocolumn {
+	padding: 20px 0;
+	border-bottom: 4px dashed #999;
+}
+.text {
+	display: inline-block;
+	width: 62.1%;
+}
+.pic {
+	display: inline-block;
+	width: 37.7%;
+	float: right;
+}
+.threecolumn {
+	padding: 20px 0;
+	border-bottom: 4px dashed #999;
+	margin-bottom: 20px;
+}
+.left {
+	display: inline-block;
+	width: 100%;
+	float: left;
+	margin-right: 10px;
+}
+.center {
+	display: inline-block;
+	width: 100%;
+	float: left;
+	margin-right: 10px;
+}
+.right {
+	display: inline-block;
+	width: 100%;
+}
+.after {
+	background: lightsteelblue;
+	padding: 20px 10px;
+	margin-top: 20px;
+	clear: both;
+}
+footer {
+	padding: 20px 20px 10px 20px;
+	margin-top: 20px;
+}
+footer p {
+	text-align: center;
+}
+/*-- Sets Media Queries --*/
+@media screen and (min-width: 478px) {/*-- specifies properties for screens LARGER than 478px --*/
+	.left {width: 47.5%;}
+	.center {width: 47.5%;}
+	.right {width: 100%;}
+}
+@media screen and (min-width: 768px) {/*-- specifies properties for screens LARGER than 768px --*/
+	.left {width: 32.5%;}
+	.center {width: 32.5%;}
+	.right {width: 32.5%;}
+}
+@media screen and (min-width: 1024px) {/*-- specifies properties for screens LARGER than 1024px --*/
+}
+@media screen and (min-width: 1440px) {/*-- specifies properties for screens LARGER than 1440px --*/
+}
